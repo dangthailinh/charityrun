@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charity Run 2024 - SECC</title>
+    <link rel="stylesheet" href="i.css">
+</head>
+<body>
+    <header class="main-header">
+        <div style="display: flex; align-items: center;">
+            <a href="index.html">
+                <img src="img/run7.jpg.jpg" alt="Charity Run Logo" style="width: 60px; height: 60px; margin-right: 15px;">
+            </a>
+            <div>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero" style="max-width: 100%; height: 150px; overflow: hidden;">
+        <div class="slider" style="display: flex; align-items: center; justify-content: center; height: 100%;">
+            <div class="slide">
+                <img src="https://th.bing.com/th/id/OIP.xI3Wn1zNZfHN1RttT9bwiAHaE0?rs=1&pid=ImgDetMain" alt="Slide 1" style="height: 100%; object-fit: cover;">
+            </div>
+            <div class="slide">
+                <img src="https://th.bing.com/th/id/OIP.gkyguVi0-I6C5Uk1PtnmLAHaE7?rs=1&pid=ImgDetMain" alt="Slide 2" style="height:100%; object-fit: cover;">
+            </div>
+            <div class="slide">
+                <img src="https://th.bing.com/th/id/R.15fee22f60da89ea373066640dc66298?rik=YXL5LOH8YosrvQ&riu=http%3a%2f%2fwww.rollercoasterruns.com%2fwp-content%2fuploads%2f2018%2f04%2fRun-for-Charity.png&ehk=d3N79xfj1ISIETZElGIkEOwzpErGcHJ2PFQmzmitPjc%3d&risl=&pid=ImgRaw&r=0&sres=1&sresct=1" alt="Slide 3" style="height: 100%; object-fit: cover;">
+            </div>
+        </div>
+        <div class="slider-navigation" style="position: absolute; top: 50%; left: 0; right: 0; display: flex; justify-content: space-between;">
+            <button class="nav-btn prev" style="background: none; border: none; font-size: 24px;">⇦</button>
+            <button class="nav-btn next" style="background: none; border: none; font-size: 24px;">⇨</button>
+        </div>
+    </section>
+    <nav>
+        <a href="#" onclick="showPage('home')">Home</a>
+        <a href="#" onclick="showPage('events')">Program Events</a>
+        <a href="#" onclick="showPage('info')">General Information</a>
+        <a href="#" onclick="showPage('participation')">Participation Information</a>
+        <a href="#" onclick="showPage('about')">About Us</a>
+        <a href="#" onclick="showPage('contact')">Inquiry/Visitor Form</a>
+    </nav>
+    
+    <div class="container" id="content">
+<!-- Home Page -->
+<div id="home" class="page" style="font-family: 'Arial', sans-serif;">
+    <section class="benefits">
+        <h2>Why Participate in Charity Run?</h2>
+        <div class="benefit-grid">
+            <div class="benefit-item">
+                <h3>Physical Health</h3>
+                <p>Running improves cardiovascular fitness, burns calories, and strengthens muscles.</p>
+            </div>
+            <div class="benefit-item">
+                <h3>Mental Health</h3>
+                <p>Regular participation in physical activities boosts mental health and reduces stress.</p>
+            </div>
+            <div class="benefit-item">
+                <h3>Supporting a Cause</h3>
+                <p>All proceeds from Charity Run 2024 will be donated to local organizations providing education and healthcare to underprivileged communities.</p>
+            </div>
+            <div class="benefit-item">
+                <h3>Building Community</h3>
+                <p>Charity runs bring together people from all walks of life, creating a sense of unity and shared purpose.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="highlights">
+        <h2>Event Highlights</h2>
+        <ul class="highlight-list">
+            <li>5K and 10K Runs for all skill levels</li>
+            <li>Charity Expo with health and wellness exhibitors</li>
+            <li>Free fitness workshops and wellness talks</li>
+            <li>Live entertainment and family activities</li>
+        </ul>
+    </section>
+
+    <section class="gallery">
+        <h2>Gallery</h2>
+        <p>Check out the highlights from past Charity Run events:</p>
+        <div class="gallery-grid">
+            <img src="https://britchamvn.com/wp-content/uploads/2020/12/6th-Fun-Run-2020-1.jpg" alt="Charity Run 2023">
+            <img src="https://th.bing.com/th/id/R.bb488eb721979d320c2df413371e2b68?rik=ZUHX85JRG6rg0Q&pid=ImgRaw&r=0" alt="Charity Run Participants">
+            <img src="https://static.tuoitrenews.vn/ttnew/r/2019/10/29/46720511-2169501673069257-757591003623325696-o-1572342928.jpg" alt="Runners at Charity Run">
+        </div>
+    </section>
+
+    <section class="about">
+        <h2>About Charity Run 2024</h2>
+        <p><strong>Organized by:</strong> The Health & Wellness Foundation, the Charity Run 2024 is a not-for-profit event aimed at raising funds and awareness for important social causes.</p>
+        <p><strong>Date & Location:</strong> Saigon Exhibition and Convention Center - SECC, Hochiminh City, 11th October 2024.</p>
+        <a href="#join" class="cta-button">Join Us Now</a>
+    </section>
+</div>
+
+
+
+     
+<div id="events" class="page" style="display:none;">
+    <h2>Program Events - Charity Run 2024</h2>
+
+    <h3>Event Theme: Run for a Better Tomorrow</h3>
+    <p>Charity Run 2024 carries the theme "Run for a Better Tomorrow," highlighting the importance of community spirit, health, and helping those in need. This event is more than just a race—it’s a platform for individuals to unite and contribute towards positive change in society.</p>
+    <img src="https://th.bing.com/th/id/OIP.-hqoutqeyWmsKptGSnu0VgHaFV?rs=1&pid=ImgDetMain" alt="Run for a Better Tomorrow" class="event-img">
+
+    <h3>Event Objectives</h3>
+    <ul class="objectives-list">
+        <li><strong>Raise Funds:</strong> All proceeds from the event will be directed to local charities that support education and healthcare for underprivileged communities.</li>
+        <li><strong>Promote Health & Wellness:</strong> Encourage participants to lead active and healthy lifestyles through running and physical activities.</li>
+        <li><strong>Build Community:</strong> Bring together diverse groups of people in support of a common cause, fostering a spirit of cooperation and solidarity.</li>
+        <li><strong>Environmental Awareness:</strong> Promote sustainability by encouraging eco-friendly practices throughout the event.</li>
+    </ul>
+    
+
+    <h3>Schedule of Activities</h3>
+    <table class="schedule-table">
+        <thead>
+            <tr>
+                <th>Time</th>
+                <th>Event</th>
+                <th>Location</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>6:00 AM - 7:00 AM</td>
+                <td>Registration & Warm-up Session</td>
+                <td>Main Stage</td>
+            </tr>
+            <tr>
+                <td>7:30 AM</td>
+                <td>Start of 5K Run</td>
+                <td>Running Track</td>
+            </tr>
+            <tr>
+                <td>8:00 AM</td>
+                <td>Start of 10K Run</td>
+                <td>Running Track</td>
+            </tr>
+            <tr>
+                <td>9:30 AM - 12:00 PM</td>
+                <td>Charity Expo & Wellness Workshops</td>
+                <td>Exhibition Hall</td>
+            </tr>
+            <tr>
+                <td>12:30 PM</td>
+                <td>Closing Ceremony & Awards</td>
+                <td>Main Stage</td>
+            </tr>
+        </tbody>
+    </table>
+   
+
+    <h3>Featured Activities</h3>
+    <ul class="objectives-list">
+        <li><strong>5K Run:</strong> A fun and easy run for beginners and families, perfect for enjoying the outdoors and supporting a cause.</li>
+        <li><strong>10K Run:</strong> For experienced runners looking for a challenge, this race will test endurance and speed.</li>
+        <li><strong>Charity Expo:</strong> Explore booths from local businesses and non-profits focused on health, wellness, and sustainable living.</li>
+        <li><strong>Wellness Workshops:</strong> Free workshops on fitness, nutrition, and mindfulness led by experts in the field.</li>
+        <li><strong>Live Entertainment:</strong> Enjoy music performances and entertainment throughout the day.</li>
+        <li><strong>Eco-Friendly Initiatives:</strong> A special focus on reducing waste and promoting recycling during the event.</li>
+    </ul>
+  
+
+    <h3>Additional Information</h3>
+    <p>Participants will receive a race kit that includes a Charity Run 2024 T-shirt, race bib, and a medal for completing the race. Water stations will be available throughout the track, and medical staff will be on standby for any emergencies.</p>
+
+</div>
+<!-- General Information Page -->
+<div id="info" class="page" style="display:none;">
+    <h2>General Information - Charity Run 2024</h2>
+    
+    <h3>Venue Information</h3>
+    <p>The Charity Run 2024 will be held at the <strong>Saigon Exhibition and Convention Center (SECC)</strong>, located in Hochiminh City. This modern venue is equipped with excellent facilities to accommodate participants and spectators.</p>
+    
+
+    <h3>How to Reach the Venue</h3>
+    <h4>Address:</h4>
+    <p>799 Nguyễn Văn Linh, Tân Phú, Quận 7, Hồ Chí Minh, Việt Nam</p>
+    
+    <h4>Transportation Options:</h4>
+    <ul>
+        <li><strong>By Car:</strong> The SECC is easily accessible by car with ample parking space available on-site.</li>
+        <li><strong>By Public Transport:</strong> You can take the Metro Line 1 (Ben Thanh - Suoi Tien) and get off at the nearest station. Several bus routes also serve the area.</li>
+        <li><strong>Ride-Sharing:</strong> Services like Grab and Uber are widely available in the city and can drop you off directly at the venue.</li>
+    </ul>
+   
+
+    <h3>Parking Facilities</h3>
+    <p>The venue provides designated parking areas for participants and attendees. Parking is available free of charge for all event-goers.</p>
+
+    <h3>Event Participants</h3>
+    <h4>Exhibitors:</h4>
+    <p>Local businesses and organizations will showcase their products and services related to health, wellness, and community support.</p>
+    
+    <h4>Partners & Sponsors:</h4>
+    <p>We are proud to partner with various local and national sponsors who contribute to the success of Charity Run 2024. Their support helps us to maximize our fundraising efforts.</p>
+   
+
+    <h3>Special Entitlements for Participants</h3>
+    <p>All participants in the Charity Run 2024 will receive:</p>
+    <ul>
+        <li>A race kit that includes a Charity Run 2024 T-shirt, race bib, and medal</li>
+        <li>Access to the Charity Expo with various health and wellness resources</li>
+        <li>Free refreshments at designated stations throughout the venue</li>
+        <li>Medical assistance available on-site</li>
+    </ul>
+    
+</div>
+
+
+    
+        <div id="participation" class="page" style="display:none;">
+            <h2>Participation Information</h2>
+            <p class="intro">Whether you're a runner, volunteer, or sponsor, there's a way for you to get involved!</p>
+        
+            <div class="participation-section">
+                <h3>Runners</h3>
+                <p>Registration Fee: <span class="fee">$20</span> for 5K, <span class="fee">$30</span> for 10K</p>
+                <p>Join us for a fun and challenging race! As a runner, you'll receive:</p>
+                <ul>
+                    <li>A race T-shirt</li>
+                    <li>Finishers medal</li>
+                    <li>Post-race refreshments</li>
+                </ul>
+                <p>Sign up today to secure your spot!</p>
+                <button class="register-button">Register Now</button>
+            </div>
+        
+            <div class="participation-section">
+                <h3>Volunteers</h3>
+                <p>Help us make this event a success! Volunteers are needed for:</p>
+                <ul>
+                    <li>Event logistics</li>
+                    <li>Water stations</li>
+                    <li>Set up and tear down</li>
+                    <li>Cheering and encouraging runners</li>
+                </ul>
+                <p>Volunteers will receive:</p>
+                <ul>
+                    <li>A volunteer T-shirt</li>
+                    <li>Free food and drinks</li>
+                    <li>Community service hours</li>
+                </ul>
+                <button class="volunteer-button">Sign Up to Volunteer</button>
+            </div>
+        
+            <div class="participation-section">
+                <h3>Sponsors</h3>
+                <p>We offer various sponsorship packages to fit your needs:</p>
+                <ul>
+                    <li><strong>Platinum Sponsor:</strong> $5,000 - Includes top-tier branding and recognition</li>
+                    <li><strong>Gold Sponsor:</strong> $3,000 - Includes prominent logo placement</li>
+                    <li><strong>Silver Sponsor:</strong> $1,500 - Includes logo on event materials</li>
+                </ul>
+                <p>Your support helps us enhance the event experience and contribute to our cause. <a href="mailto:contact@example.com" class="contact-link">Contact us for details.</a></p>
+                <button class="sponsor-button">Become a Sponsor</button>
+            </div>
+        </div>
+        
+        
+
+    
+        <div id="about" class="page" style="display:none;">
+            <div class="about-us" style="display: flex; justify-content: center; align-items: center; min-height: 100vh;">
+                <div class="main-content" style="max-width: 800px; text-align: center;">
+                    <h1>VISION, MISSION & VALUES</h1>
+                    <p><strong>reSaigon Charity RUN CIO</strong> was founded in 1992 to help disadvantaged children get an education and a fairer start in life...</p>
+        
+                    <h2>Our Mission:</h2>
+                    <p class="quote">"Join us in the heart of Saigon for a charity run dedicated to raising funds for underprivileged communities..."</p>
+        
+                    <h2>Our Philosophy:</h2>
+                    <p>We believe in the power of community and taking action for good...</p>
+        
+                    <h2>Since our inception, we have followed these principles:</h2>
+                    <div class="principles">
+                        <ul>
+                            <li>Community First – We prioritize building connections and fostering a supportive environment for everyone involved.</li>
+                            <li>Health & Empowerment – We believe in promoting both physical well-being and the empowerment of underprivileged communities.</li>
+                            <li>Lasting Impact – Our focus is on creating sustainable, long-term benefits through education and healthcare initiatives.</li>
+                        </ul>
+                    </div>
+        
+                    <div class="buttons">
+                        <a href="#">DONATE NOW</a>
+                        <a href="#">SPONSOR A FUTURE</a>
+                    </div>
+                </div>
+            </div>
+            </div>
+
+            <div id="contact" class="page" style="display:none;">
+            <div class="form-container">
+                <form id="event-enquiry-form" onsubmit="return validateForm()">
+                    <h2>Event Enquiry Form</h2>
+            
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" placeholder="Enter Your Name" >
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" placeholder="Enter Correct Email Format" >
+                    </div>
+            
+                    <div class="form-group">
+                        <label for="event">Interested Event:</label>
+                        <select id="event" name="event" >
+                            <option value="">Select Your Interested Event</option>
+                            <option value="event1">Event 1</option>
+                            <option value="event2">Event 2</option>
+                        </select>
+                    </div>
+            
+                    <div class="form-group full-width">
+                        <input type="checkbox" id="join" name="join">
+                        <label for="join">To Join</label>
+                    </div>
+            
+                    <div class="form-group full-width">
+                        <label>Category of Enquiry:</label>
+                        <div class="checkbox-group">
+                            <div>
+                                <input type="checkbox" id="activities" name="category" value="activities">
+                                <label for="activities">Event Activities</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="fees" name="category" value="fees">
+                                <label for="fees">Registration Fees</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="rules" name="category" value="rules">
+                                <label for="rules">Rules & Guidelines</label>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="form-group full-width">
+                        <label for="message">Detailed Enquiry:</label>
+                        <textarea id="message" name="message" placeholder="Type here...." ></textarea>
+                    </div>
+            
+                    <div class="form-group buttons">
+                        <button type="submit">Submit</button>
+                        <button type="reset">Cancel</button>
+                    </div>
+                </form>
+            </div>
+             </div>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section contact">
+                    <h3>Contact</h3>
+                    <p><strong>BRITISH CHAMBER OF COMMERCE VIETNAM</strong></p>
+                    <p>enquiries@britchamvn.com</p>
+                    <p><strong>HANOI</strong></p>
+                    <p>28A Tran Hung Dao, Hoan Kiem<br>+84 24 3633 0244</p>
+                    <p><strong>HO CHI MINH CITY</strong></p>
+                    <p>G/F 25 Le Duan, District 01<br>+84 28 3829 8430</p>
+                </div>
+        
+                <div class="footer-section more">
+                    <h3>More</h3>
+                    <ul>
+                        <li><a href="#">Membership</a></li>
+                        <li><a href="#">Event Calendar</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms and Conditions</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-section newsletter">
+                    <h3>Newsletter</h3>
+                    <p>Subscribe to stay up to date with Vietnam’s charity latest news and events.</p>
+                    <button class="subscribe-btn">SUBSCRIBE</button>
+                </div>
+        
+                <div class="footer-section social">
+                    <h3>Connect on Social Media:</h3>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/britchamvietnamcharityfunrun/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/charityfunrun/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://x.com/i/flow/login?redirect_after_login=%2FTH96RUN" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+        
+            <div class="footer-bottom">
+                <div class="footer-accreditation">
+                    <p>Accredited by</p>
+                    <img src="" alt="British Chambers of Commerce">
+                </div>
+                <div class="footer-partner">
+                    <p>Partner with</p>
+                    <img src="great-britain-logo.png" alt="Great Britain">
+                </div>
+                <p>Copyright © 2024 Charity Vietnam. All rights reserved.</p>
+            </div>
+        
+            <a href="#top" class="back-to-top">BACK TO TOP</a>
+        </footer>
+        
+<script src="i.js"></script>
+</body>
+</html>
