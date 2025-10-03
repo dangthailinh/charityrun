@@ -2,50 +2,25 @@ name: Deploy to EC2
 
 on:
   push:
-    branches:
-<<<<<<< HEAD
-      - main   # Deploy khi có push lên nhánh main
-=======
-      - main
->>>>>>> 33df2bd (Add deploy workflow)
+    branches: [ "main" ]   # khi push code lên nhánh main thì chạy
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
 
     steps:
-<<<<<<< HEAD
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Setup SSH
-        uses: webfactory/ssh-agent@v0.9.0
-        with:
-          ssh-private-key: ${{ secrets.EC2_SSH_KEY }}
-
-      - name: Deploy to EC2
-        run: |
-          ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} << 'EOF'
-            cd ~/charityrun
-            git pull origin main
-            sudo rm -rf /var/www/html/*
-            sudo cp -r ~/charityrun/* /var/www/html/
-            sudo systemctl restart nginx
-          EOF
-=======
     - name: Checkout code
       uses: actions/checkout@v4
 
-    - name: Setup SSH
+    - name: Start SSH Agent
       uses: webfactory/ssh-agent@v0.9.0
       with:
         ssh-private-key: ${{ secrets.EC2_SSH_KEY }}
 
-    - name: Deploy to EC2
+    - name: Deploy files to EC2
       run: |
-        ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} << 'EOF'
-          cd /var/www/html
-          git pull origin main
-          sudo systemctl restart apache2
-        EOF
->>>>>>> 33df2bd (Add deploy workflow)
+        ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} "
+          mkdir -p /var/www/html/ &&
+          rm -rf /var/www/html/*"
+        scp -o StrictHostKeyChecking=no -r * ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }}:/var/www/html/
+
